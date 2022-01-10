@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+
+        * {
+
+padding: 0;
+
+margin: 0;
+
+-webkit-box-sizing: border-box;
+
+box-sizing: border-box;
+
+}
+
+ .wrapper {
+
+display: -webkit-box;
+
+display: -ms-flexbox;
+
+display: flex;
+
+overflow-x: auto;
+
+-ms-scroll-snap-type: x mandatory;
+
+    scroll-snap-type: x mandatory;
+
+    overflow-y:hidden;
+
+}
+
+section {
+
+display: -webkit-box;
+
+display: -ms-flexbox;
+
+display: flex;
+
+height: 565px;
+
+min-width: 300px;
+
+scroll-snap-align: start;
+
+font-family: "Poppins", sans-serif;
+
+font-size: 9vw;
+
+font-weight: 600;
+
+color: #ffffff;
+
+}
+
+.wrapper section:nth-child(1) {
+
+background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuoqn6iPqkg61tZEw_93DQUltzW9pJRsQ66Q&usqp=CAU);
+
+}
+
+   
+
+section:nth-child(1) .dot{
+
+    background-color:#fff;
+
+    tansition:0.3s;
+
+}
+
+.wrapper section:nth-child(2) {
+
+background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuoqn6iPqkg61tZEw_93DQUltzW9pJRsQ66Q&usqp=CAU);
+
+overflow-x:hidden;
+
+}
+
+section:nth-child(2) .dot1{
+
+    background-color:#fff;
+
+    tansition:0.3s;
+
+}
+
+.wrapper section:nth-child(3) {
+
+background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuoqn6iPqkg61tZEw_93DQUltzW9pJRsQ66Q&usqp=CAU);
+
+overflow-x:hidden;
+
+}
+
+section:nth-child(3) .dot2{
+
+    background-color:#fff;
+
+    tansition:0.3s;
+
+}
+
+img{
+
+    height:40px;
+
+    width:40px;
+
+    border-radius:50%;
+
+    border-color:transparent;
+
+}
+
+button{
+
+    outline:none;
+
+    border:none;
+
+    background-color:transparent;
+
+    margin-left:18px;
+
+}
+
+#i{
+
+    height:40px;
+
+    width:40px;
+
+    font-size:20px;
+
+    color:#fff;
+
+    background-color:royalblue;
+
+    border:solid 10px royalblue;
+
+    border-radius:50%;
+
+}
+
+.cont{
+
+    height:270px;
+
+    width:270px;
+
+    text-align:center;
+
+    margin-top:40px;
+
+    margin-left:15px;
+
+    border:solid 1px transparent;
+
+    border-radius:15%;
+
+    background:rgb(255,255,255,0.1);
+
+}
+
+#date{
+
+    font-size:15px;
+
+    margin-top:60px;
+
+}
+
+#time{
+
+    font-size:30px;
+
+    margin-top:30px;
+
+}
+
+#city{
+
+    font-size:10px;
+
+}
+
+.search{
+
+    height:40px;
+
+    width:260px;
+
+    border:solid 1px transparent;
+
+    border-radius:5%;
+
+    background-color:#0A0A08;
+
+    margin-top:360px;
+
+    margin-left:-265px;
+
+    display:flex;
+
+    align-items:center;
+
+    box-shadow:1px 1px 1px 1px #000;
+
+}
+
+.text{
+
+    text-align:left;
+
+    font-style:arial;
+
+    font-size:15px;
+
+}
+
+.bottom{
+
+    margin-top:450px;
+
+    height:40px;
+
+    width:300px;
+
+    background-color:transparent;
+
+    margin-left:-280px;
+
+    justify-content:center;
+
+}
+
+#txt{
+
+    font-size:4px;
+
+    margin-bottom:50px;
+
+}
+
+figcaption{
+
+    font-size:5px;
+
+    font-style:arial;
+
+    margin-left:18px;
+
+    margin-top:-12px;
+
+    font-weight:bold;
+
+    max-width:40px;
+
+    overflow-x:scroll;
+
+}
+
+.app{
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+
+}
+
+.dotcont{
+
+    height:12px;
+
+    width:35px;
+
+    margin-top:495px;
+
+    margin-left:-155px;
+
+    background-color:transparent;
+
+}
+
+.dot{
+
+    height:10px;
+
+    width:10px;
+
+    border:solid 1px #fff;
+
+    border-radius:50%;
+
+    background-color:transparent;
+
+}
+
+.dot1{
+
+    height:10px;
+
+    width:10px;
+
+    border:solid 1px #fff;
+
+    border-radius:50%;
+
+    background-color:transparent;
+
+    margin:-10px 0px 0px 15px;
+
+}
+
+.dot2{
+
+    height:10px;
+
+    width:10px;
+
+    border:solid 1px #fff;
+
+    border-radius:50%;
+
+    background-color:transparent;
+
+    margin:-10px 0px 0px 30px;
+
+}
+
+    </style>
+
+    <script src="https://kit.fontawesome.com/9d89bb858d.js" crossorigin="anonymous"></script>
+
+    <script>
+
+       navigator.getBattery().then(function(battery) { 
+
+    var level = battery.level; 
+
+    level = Math.round(Number(level*100)) + "%";
+
+//-------------Pallavi-Bhardwaj-------------//
+
+var d1 = new Object();
+
+var d2 = new Object();
+
+d1 = {
+
+    0:'SUNDAY',
+
+    1:'MONDAY',
+
+    2:'TUESDAY',
+
+    3:'WEDNESDAY',
+
+    4:'THURSDAY',
+
+    5:'FRIDAY',
+
+    6:'SATURDAY'
+
+}
+
+d2 = {
+
+    0:"January",
+
+    1:"February",
+
+    2:"March",
+
+    3:"April",
+
+    4:"May",
+
+    5:"June",
+
+    6:"July",
+
+    7:"August",
+
+    8:"September",
+
+    9:"October",
+
+    10:"November",
+
+    11:"December"    
+
+}
+
+function time(){
+
+        var d = new Date();
+
+        var sec = d.getSeconds();
+
+        var min = d.getMinutes();
+
+        var hor = d.getHours();
+
+        var dat = d.getDate();
+
+        var mon = d.getMonth();
+
+        var yer = d.getFullYear();
+
+        var day = d.getDay();
+
+        var d_y = d1[day];
+
+        var m_n = d2[mon];
+
+        
+
+        if (sec<10){
+
+            sec = "0"+sec;
+
+        }
+
+        if (min<10){
+
+            min = "0"+min;
+
+        }
+
+        
+
+        if (hor>12){
+
+            hor = hor -12 ;
+
+            if (hor<10){
+
+                hor = "0"+hor;
+
+            }
+
+            var a_p = "PM"
+
+        }
+
+        else {
+
+            var a_p = "AM";
+
+            if(hor<10){
+
+                    hor = "0"+hor;
+
+                }
+
+        }
+
+var num = (Math.random()*100).toFixed(2);
+
+document.getElementById('date').innerHTML = d_y+", "+m_n+" "+dat;
+
+document.getElementById('date2').innerHTML = d_y.slice(0,3)+", "+m_n.slice(0,3)+" "+dat;
+
+document.getElementById('time').innerHTML = hor+":"+min;
+
+}
+
+setInterval(time,1000);
+
+}); 
+
+    </script>
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="wrapper">
+
+      <section>
+
+      <div class="cont">
+
+       <div id="date"></div>  
+
+       <div id="time"></div>
+
+       <div id="date2" style="font-size:10px;margin-top:-5px;"></div>
+
+       <div id="city">Delhi | 14° C <i class="fa fa-refresh"></i></div>
+
+       </div>
+
+         <div class="search"><div class="text"><pre> Search with Google        <i class="fa fa-microphone"></i></pre></div></div>
+
+         <div class="app" style="margin-top:430px;margin-left:-280px">
+
+            <figure>
+
+              <button><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1200px-Google_%22G%22_Logo.svg.png"/></button>
+
+                <figcaption style="margin-left:23px;">Google</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-T3vhLzkSXzmfOZ0slbi1qMbd-U3_qGEpbA&usqp=CAU"/></button>
+
+                <figcaption>Google L.</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrxl5ciZxPoJfk426JKOfrSWOGGTg_Ql44AQ&usqp=CAU"/></button>
+
+                <figcaption>Assistant</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRqrh91oNU-g03Xkmu1_AGTdEy_B4E1NaaXg&usqp=CAU"/></button>
+
+                <figcaption>Play St..</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Circle-icons-tools.svg/1024px-Circle-icons-tools.svg.png"/></button>
+
+                <figcaption>My Tools</figcaption>
+
+            </figure>
+
+             </div>
+
+             <div class="dotcont">
+
+             <div class="dot"></div>
+
+             <div class="dot1"></div>
+
+             <div class="dot2"></div>
+
+             </div>
+
+             <div class="app" style="margin-top:508px;margin-left:-170px;">
+
+            <figure>
+
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUurGtzSspoPpnE5WhtHX6ZFJyPK1T7qzWPA&usqp=CAU"/></button>
+
+                <figcaption>Phone C.</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWTdiiAJ3Q9u1pIpx77fpHy7cCX8YKukhWxA&usqp=CAU"/></button>
+
+                <figcaption>Message</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Chrome_icon_%28September_2014%29.svg/2048px-Google_Chrome_icon_%28September_2014%29.svg.png"/></button>
+
+                <figcaption style="margin-left:21px;">Chrome</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://icon-library.com/images/gallery-app-icon/gallery-app-icon-19.jpg"/></button>
+
+                <figcaption style="margin-left:23px;">Gallery</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOh2xDUxR1gw-d7QIyFMgUX1WsvJufEb8h4w&usqp=CAU"/></button>
+
+                <figcaption style="margin-left:20px;">Camera</figcaption>
+
+            </figure>
+
+             </div>
+
+      </section>
+
+      
+
+        <section>
+
+        <div class="app" style="margin-top:5px;">
+
+            <figure>
+
+                 <button style="margin-top:7px;"><img src="https://cdn2.iconfinder.com/data/icons/ios7-inspired-mac-icon-set/512/Calculator_512.png" style="background:#fff;"/></button>
+
+                <figcaption>Calculator</figcaption>
+
+            </figure>
+
+            <figure>
+
+            <button><i class="fa fa-music" id="i" style="background-color:red;border-color:red;"></i></button>
+
+                <figcaption style="margin-top:0px;margin-left:25px;">Music</figcaption>
+
+            </figure>
+
+            <figure>
+
+                <button><i class="fas fa-map-marker-alt" id="i" style="background-color:royalblue;"></i></button>
+
+      <figcaption style="margin-top:0px;margin-left:29px;">Map</figcaption>   
+
+            </figure>
+
+            <figure>
+
+                <button style="margin-top:7px;"><img src="https://iconape.com/wp-content/files/hk/93955/png/sololearn-2.png" style="background:#fff;border:solid 5px #fff;border-radius:50%;"/></button>
+
+                <figcaption>Sololearn</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button style="margin-top:7px;"><img src="https://www.citypng.com/public/uploads/preview/-11597283055r5ynokf2kb.png"/></button>
+
+                  <figcaption style="margin-left:24px;">G-Mail</figcaption>
+
+              </button>  
+
+            </figure>                  
+
+           </div>
+
+        <div class="app" style="margin-top:80px;margin-left:-290px">
+
+            <figure>
+
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1lbXm3dUGWiVKPLAPRA8glwLUYdx2N38KKfTzGuzSVQKlzQbcTcjI5BL&s=10"/></button>
+
+                <figcaption style="margin-left:24px;">Github</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgSQpD5fO-3nvc1mlkKLWkzoJpm_SeHXmRyKosXxZQeoNGRBhfd9gP35rp&s=10"/></button>
+
+                <figcaption style="margin-left:20px;">Dropbox</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://i.ibb.co/G9QMtNJ/IMG-20220110-191307.jpg"/></button>
+
+                <figcaption style="margin-left:30px;">Rar</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv60YXXf2IGwmuLgzwrr-kBTUdfeLRhtW2gQ&usqp=CAU"/></button>
+
+                <figcaption>Tor Brow..</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://cdn.pixabay.com/photo/2019/10/16/09/05/utorrent-4553905_1280.png"/></button>
+
+                <figcaption style="margin-left:21px;">utorrent</figcaption>
+
+            </figure>
+
+             </div>
+
+             <div class="app" style="margin-top:150px;margin-left:-290px">
+
+            <figure>
+
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeaQICddLk32bojzfyXMy8mumGzFw0kF-YZA&usqp=CAU"/></button>
+
+                <figcaption style="margin-left:25px;">Acode</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlNau4Z5Ry_KnMVR2IBSjKFGx2rCAYVb3viw&usqp=CAU"/></button>
+
+                <figcaption style="margin-left:23px;">Pydroid</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://cdn0.iconfinder.com/data/icons/most-usable-logos/120/Whats_App-512.png"/></button>
+
+                <figcaption>WhatsApp</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/1024px-Telegram_logo.svg.png"/></button>
+
+                <figcaption>Telegram</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/1200px-2021_Facebook_icon.svg.png"/></button>
+
+                <figcaption>Facebook</figcaption>
+
+            </figure>
+
+             </div>
+
+            <div class="app" style="margin-top:220px;margin-left:-290px">
+
+            <figure>
+
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN7k50LcBON966Y6KLMH0bAYhj0Yp8emSeFw&usqp=CAU"/></button>
+
+                <figcaption>Instagram</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTePYDejfSIrQf-WCKlYiRjwKkmomXuiQOk5Q&usqp=CAU"/></button>
+
+                <figcaption style="margin-left:22px;">Discord</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_twitter-512.png"/></button>
+
+                <figcaption style="margin-left:23px;">Twitter</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_reddit-512.png"/></button>
+
+                <figcaption style="margin-left:25px;">Reddit</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4IUkTHTaNT1f7MXrBHqH0-Myvn9DakmFHlQ&usqp=CAU"/></button>
+
+                <figcaption style="margin-left:24px;">Udemy</figcaption>
+
+            </figure>
+
+             </div>
+
+            <div class="app" style="margin-top:290px;margin-left:-290px">
+
+            <figure>
+
+              <button><img src="https://s3.amazonaws.com/assets.materialup.com/users/pictures/000/028/581/thumb/syFSpLD0_400x400.jpg?1507620807"/></button>
+
+                <figcaption>Snapchat</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://cdn2.iconfinder.com/data/icons/social-media-icons-23/800/linkedin-512.png"/></button>
+
+                <figcaption style="margin-left:21px">Linkedin</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Microsoft_Office_logo_%282019%E2%80%93present%29.svg/2048px-Microsoft_Office_logo_%282019%E2%80%93present%29.svg.png"/></button>
+
+                <figcaption>MicrosoftOffice</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIfWetyTJR8jPMscg8TRsZV8ity39R5oxX_Q&usqp=CAU"/></button>
+
+                <figcaption style="margin-left:21px;">Amazon</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTetkaDZDmxgAu0UkO9Uae4V6A3SinP_Ve9Nw&usqp=CAU"/></button>
+
+                <figcaption style="margin-left:22px;">Flipkart</figcaption>
+
+            </figure>
+
+             </div>
+
+            <div class="app" style="margin-top:360px;margin-left:-290px">
+
+            <figure>
+
+              <button><img src="https://i.ibb.co/L90p7dM/pinterest-logo-icon-3198.png"/></button>
+
+                <figcaption>Pinterest</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://brave.com/wp-content/uploads/2019/03/brave-logo.png"/></button>
+
+                <figcaption>Brave Br..</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLyrAzrVshexSci6yDl3595lK2w5SoWWnrRw&usqp=CAU"/></button>
+
+                <figcaption style="margin-left:22px;">Spotify</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://www.wizcase.com/wp-content/uploads/2020/01/VLC-LOGO.png"/></button>
+
+                <figcaption>VLC Pla..</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrlWI-9ZQKs4mgbFbXeqT_Pr9-2s_ZpCizow&usqp=CAU"/></button>
+
+                <figcaption>Amazon•Music</figcaption>
+
+            </figure>
+
+             </div>
+
+            <div class="app" style="margin-top:430px;margin-left:-290px">
+
+            <figure>
+
+              <button><img src="https://image.apktoy.com/img/49/net.one97.paytm/icon.png"/></button>
+
+                <figcaption style="margin-left:24px;">Paytm</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrefAnycxGjrRRmNEcOcUk8p3bFDT3KcOQVQ&usqp=CAU"/></button>
+
+                <figcaption>Real Ch..</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ5xGWuTO-OsbMymzOyXHEYS2CdKOKE3N98g&usqp=CAU"/></button>
+
+                <figcaption>Candy C..</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ1498ryqpdPFq21rZh83rJL4Dlr6Tq96Mug&usqp=CAU"/></button>
+
+                <figcaption>Subway S</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ12i2ZWA1NJEcjX3FV0eAaerpfnoXjP78sA&usqp=CAU"/></button>
+
+                <figcaption>Temple R</figcaption>
+
+            </figure>
+
+             </div>
+
+            <div class="app" style="margin-top:508px;margin-left:-290px;">
+
+            <figure>
+
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUurGtzSspoPpnE5WhtHX6ZFJyPK1T7qzWPA&usqp=CAU"/></button>
+
+                <figcaption>Phone C.</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWTdiiAJ3Q9u1pIpx77fpHy7cCX8YKukhWxA&usqp=CAU"/></button>
+
+                <figcaption>Message</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Chrome_icon_%28September_2014%29.svg/2048px-Google_Chrome_icon_%28September_2014%29.svg.png"/></button>
+
+                <figcaption style="margin-left:21px;">Chrome</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://icon-library.com/images/gallery-app-icon/gallery-app-icon-19.jpg"/></button>
+
+                <figcaption style="margin-left:23px;">Gallery</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOh2xDUxR1gw-d7QIyFMgUX1WsvJufEb8h4w&usqp=CAU"/></button>
+
+                <figcaption style="margin-left:20px;">Camera</figcaption>
+
+            </figure>
+
+             </div>
+
+             <div class="dotcont">
+
+             <div class="dot"></div>
+
+             <div class="dot1"></div>
+
+             <div class="dot2"></div>
+
+             </div>
+
+        </section>
+
+        <section>
+
+            <div class="app" style="margin-top:12px;">
+
+            <figure>
+
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOxojsjDe22tatCGLn_kEEn9jZ_J0hxCunbg&usqp=CAU"/></button>
+
+                <figcaption>Amazon•Prime•Video</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://www.apkmirror.com/wp-content/uploads/2020/10/88/5f935a3c9a230-384x384.png"/></button>
+
+                <figcaption style="margin-left:23px;">Hotstar</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLYnuDXe38tPQdEeGs-Fp2iiSIjVhLSn01Yw&usqp=CAU"/></button>
+
+                <figcaption>Amazon•Kindle</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShteXNbut2b6EE4dRRxnpqRdqIB6-icMbxJQ&usqp=CAU"/></button>
+
+                <figcaption>YT Music</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSup7yY5kXvaxpi-mqDxnGtGKAT0MlLBSZDZg&usqp=CAU"/></button>
+
+                <figcaption>Zoom Cl.</figcaption>
+
+            </figure>
+
+             </div>
+
+            <div class="dotcont">
+
+             <div class="dot"></div>
+
+             <div class="dot1"></div>
+
+             <div class="dot2"></div> 
+
+             </div>
+
+             <div class="app" style="margin-top:508px;margin-left:-170px;">
+
+            <figure>
+
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUurGtzSspoPpnE5WhtHX6ZFJyPK1T7qzWPA&usqp=CAU"/></button>
+
+                <figcaption>Phone C.</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWTdiiAJ3Q9u1pIpx77fpHy7cCX8YKukhWxA&usqp=CAU"/></button>
+
+                <figcaption>Message</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Chrome_icon_%28September_2014%29.svg/2048px-Google_Chrome_icon_%28September_2014%29.svg.png"/></button>
+
+                <figcaption style="margin-left:21px;">Chrome</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://icon-library.com/images/gallery-app-icon/gallery-app-icon-19.jpg"/></button>
+
+                <figcaption style="margin-left:23px;">Gallery</figcaption>
+
+            </figure>
+
+            <figure>
+
+              <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOh2xDUxR1gw-d7QIyFMgUX1WsvJufEb8h4w&usqp=CAU"/></button>
+
+                <figcaption style="margin-left:20px;">Camera</figcaption>
+
+            </figure>
+
+             </div>
+
+        </section>
+
+      </div>
+
+    </div>
+
+  </body>
+
+</html>
+
